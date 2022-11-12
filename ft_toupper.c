@@ -6,13 +6,9 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 19:29:34 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/09 10:21:56 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/12 11:23:22 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
-#include <stdio.h>
-#include <ctype.h>
 
 int	ft_toupper(int c)
 {
@@ -22,6 +18,10 @@ int	ft_toupper(int c)
 }
 
 /*
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
+
 int	main (void)
 {
 	int letter = ';';

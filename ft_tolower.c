@@ -6,13 +6,9 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 19:29:35 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/11 10:12:53 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/12 11:23:11 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
-#include <stdio.h>
-#include <ctype.h>
 
 int	ft_tolower(int c)
 {
@@ -22,6 +18,10 @@ int	ft_tolower(int c)
 }
 
 /*
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
+
 int	main (void)
 {
 	int letter = 'p';
