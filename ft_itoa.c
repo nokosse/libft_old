@@ -3,19 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nok <nok@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:13:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/12 11:16:21 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/12 22:42:35 by nok              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
-
-char	*ft_itoa(int n);
-{
-	char	*str;
-
-	str = malloc(2 * (sizeof(char)))
-}
