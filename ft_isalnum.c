@@ -6,13 +6,9 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:45:49 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/08 10:27:15 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/12 11:19:24 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 int	ft_isalnum(int c)
 {
@@ -25,6 +21,10 @@ int	ft_isalnum(int c)
 }
 
 /*
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 int	main (int ac, char **av)
 {
 	(void) av;

@@ -6,13 +6,9 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:09:47 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/08 11:21:08 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/12 11:19:43 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 int	ft_isascii(int c)
 {
@@ -23,6 +19,10 @@ int	ft_isascii(int c)
 }
 
 /*
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 int	main (int ac, char **av)
 {
 	(void) ac;

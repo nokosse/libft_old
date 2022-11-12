@@ -6,12 +6,9 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:58:50 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/12 11:17:38 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/12 11:19:13 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
-#include <stdio.h>
 
 int	ft_atoi(char *str)
 {
@@ -39,6 +36,9 @@ int	ft_atoi(char *str)
 }
 
 /*
+#include <stdlib.h>
+#include <stdio.h>
+
 int	main(int ac, char **av)
 {
 	if(ac == 2)

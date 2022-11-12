@@ -6,13 +6,9 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:30:34 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/08 11:38:01 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/12 11:20:05 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 int	ft_isprint(int c)
 {
@@ -23,6 +19,10 @@ int	ft_isprint(int c)
 }
 
 /*
+#include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 int	main(int ac, char **av)
 {
 	(void) ac;
