@@ -6,23 +6,11 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:58:07 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/12 11:24:35 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/12 11:57:15 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -50,6 +38,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 
+/*
 #include <bsd/string.h>
 int	main (int ac, char **av)
 {
@@ -61,3 +50,4 @@ int	main (int ac, char **av)
 		//compiler avec lbsd
 	}
 }
+*/

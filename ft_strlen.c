@@ -6,12 +6,11 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:27:07 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/12 11:22:04 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/12 11:49:18 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
@@ -24,6 +23,9 @@ size_t	ft_strlen(const char *s)
 }
 
 /*
+#include <stdio.h>
+#include <string.h>
+
 int	main (int ac, char **av)
 {
 	if (ac == 2)
