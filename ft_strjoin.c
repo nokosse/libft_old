@@ -6,22 +6,11 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:01:32 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/12 11:21:59 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/13 15:46:01 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {
@@ -52,10 +41,8 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	return (str);
 }
 
-/*
-int	main(int ac, char **av)
-{
-	if (ac == 3)
-		printf ("%s",ft_strjoin (av[1], av[2]));
-}
-*/
+// int	main(int ac, char **av)
+// {
+// 	if (ac == 3)
+// 		printf ("%s",ft_strjoin (av[1], av[2]));
+// }
