@@ -6,23 +6,11 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:19:29 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/12 11:21:55 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/13 15:42:52 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {
@@ -42,14 +30,12 @@ char	*ft_strdup(const char *s)
 	return (dup);
 }
 
-/*
-int	main(int ac, char **av)
-{
-	if (ac == 2)
-	{
-		printf("%s", ft_strdup(av[1]));
-		printf("%s", "\n");
-		printf("%s", strdup(av[1]));
-	}
-}
-*/
+// int	main(int ac, char **av)
+// {
+// 	if (ac == 2)
+// 	{
+// 		printf("%s", ft_strdup(av[1]));
+// 		printf("%s", "\n");
+// 		printf("%s", strdup(av[1]));
+// 	}
+// }
