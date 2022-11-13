@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:50:04 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/12 11:21:08 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/13 15:42:37 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	is_sep(const char letter, char c)
 	return (0);
 }
 
-size_t	ft_strlen(const char *s, char c)
+size_t	ft_strlensplit(const char *s, char c)
 {
 	int	i;
 
@@ -50,7 +50,7 @@ char	*word(const char *s, char c)
 	int		i;
 
 	i = 0;
-	wdlen = ft_strlen (s, c);
+	wdlen = ft_strlensplit (s, c);
 	wd = malloc (wdlen + 1);
 	if (!wd)
 		return (NULL);
