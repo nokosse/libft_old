@@ -3,25 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nok <nok@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 19:29:39 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/12 22:45:30 by nok              ###   ########.fr       */
+/*   Updated: 2022/11/13 15:52:51 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *s)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
@@ -39,15 +28,13 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return (src_len);
 }
 
-/*
-#include <bsd/string.h>
-int	main (int ac, char **av)
-{
-	if (ac == 7)
-	{
-		printf("%ld",ft_strlcpy(av[1], av[2], atoi(av[3])));
-		printf("%s","\n");
-		printf("%ld",strlcpy(av[4], av[5], atoi(av[6])));	
-	}
-}
-*/
+// #include <bsd/string.h>
+// int	main (int ac, char **av)
+// {
+// 	if (ac == 7)
+// 	{
+// 		printf("%ld",ft_strlcpy(av[1], av[2], atoi(av[3])));
+// 		printf("%s","\n");
+// 		printf("%ld",strlcpy(av[4], av[5], atoi(av[6])));	
+// 	}
+// }
