@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:13:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/14 12:25:00 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/14 18:33:50 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ int	get_int_len(int n)
 	int	cpt;
 
 	cpt = 0;
+	if (n < 0)
+		cpt++;
 	while (n != 0)
 	{
 		cpt++;
-		n /= 10;
+		n = n / 10;
 	}
 	return (cpt);
 }
@@ -29,23 +31,31 @@ char	*ft_itoa(int n)
 {
 	char	*strint;
 	int		i;
-	
+
+	strint = malloc (sizeof(char *) * get_int_len(n) + 1);
 	i = get_int_len(n);
-	strint = malloc((sizeof(char *)) * (get_int_len(n)) + 1);
-	strint[get_int_len(n) + 1] = '\0';
-	while (i != 0)
+	strint[i] == '\0';
+	i--;
+	if (n == 0)
 	{
-		strint[i] = n - '0';
-		n = n % 10;
+		strint[0] = '0';
+		return (strint);
+	}
+	if (n < 0)
+	{
+		strint[0] = '-';
+		n *= -1;
+	}
+	while (n > 0)
+	{
+		strint[i] = (n % 10) + '0';
+		n /= 10;
 		i--;
 	}
 	return (strint);
 }
 
-int	main(int ac, char **av)
-{
-	if (ac == 2)
-	{
-		printf("%s",ft_itoa(atoi(av[2])));
-	}
-}
+// int	main(void)
+// {
+// 	printf("%s",ft_itoa(4242));
+// }
