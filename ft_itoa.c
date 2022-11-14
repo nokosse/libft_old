@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:13:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/14 18:33:50 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/14 19:22:32 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_itoa(int n)
 
 	strint = malloc (sizeof(char *) * get_int_len(n) + 1);
 	i = get_int_len(n);
-	strint[i] == '\0';
+	strint[i] = '\0';
 	i--;
 	if (n == 0)
 	{
