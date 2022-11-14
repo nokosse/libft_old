@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:50:04 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/13 18:56:47 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/14 13:53:48 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,17 @@ size_t	wrd_len(const char *s, char c)
 size_t	strcnt(const char *s, char c)
 {
 	int	i;
+	int	sep_count;
 
+	sep_count = 0;
 	i = 0;
 	while (s[i])
 	{
-		if (is_sep(*s, c) == 0)
-			i++;
+		if (is_sep(s[i], c) == 1)
+			sep_count++;
+		i++;
 	}
-	return (i);
+	return (i - sep_count);
 }
 
 char	*word(const char *s, char c)
