@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 11:12:03 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/15 16:43:37 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/15 17:18:46 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,18 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// #include <stdlib.h>
+// int	main(int ac, char **av)
+// {
+// 	if (ac == 2)
+// 	{
+// 		int n = atoi(av[1]);
+// 		printf("copie de %d caracteres:\n",n);
+// 		char	str1[] = "yo les mec";
+// 		char	str2[11];
+// 		ft_memcpy(str2, str1, n);
+// 		printf("str1: %s\n",str1);
+// 		printf("str2: %s",str2);
+// 	}
+// }

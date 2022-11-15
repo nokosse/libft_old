@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 10:05:20 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/15 16:47:40 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/15 17:17:38 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,22 @@ void	*ft_memset(void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		str[i] = (unsigned char)c;
+		str[i] = (char)c;
 		i++;
 	}
 	return (s);
 }
 
-// int main(void)
+// int main(int ac, char **av)
 // {
-// 	char str[] = "yo les mec";
-// 	printf("%s\n",str);
-// 	ft_memset(str, 's', 2);
-// 	printf("%s",str);
-// 	return (0);
+// 	if (ac == 2)
+// 	{
+// 		int n = atoi(av[1]);
+// 		printf("memset sur %d caracteres:\n",n);
+// 		char str[] = "yo les mec";
+// 		printf("%s\n",str);
+// 		ft_memset(str, 's', n);
+// 		printf("%s",str);
+// 		return (0);
+// 	}
 // }
