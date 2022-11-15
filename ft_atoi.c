@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nok <nok@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:58:50 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/14 19:01:11 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/15 23:13:24 by nok              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+#include "libft.h"
+
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	symb;
@@ -35,17 +37,12 @@ int	ft_atoi(char *str)
 	return (nb * symb);
 }
 
-/*
-#include <stdlib.h>
-#include <stdio.h>
-
-int	main(int ac, char **av)
-{
-	if(ac == 2)
-	{
-		printf("%d", ft_atoi(av[1]));
-		printf("%s", "\n");
-		printf("%d", atoi(av[1]));
-	}
-}
-*/
+// int	main(int ac, char **av)
+// {
+// 	if(ac == 2)
+// 	{
+// 		printf("%d", ft_atoi(av[1]));
+// 		printf("%s", "\n");
+// 		printf("%d", atoi(av[1]));
+// 	}
+// }
