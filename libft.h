@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nok <nok@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:47:26 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/14 23:36:39 by nok              ###   ########.fr       */
+/*   Updated: 2022/11/15 20:06:40 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,8 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	*ft_memset(void *s, int c, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
+
 
 #endif
