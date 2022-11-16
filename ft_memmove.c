@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 13:40:55 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/16 14:33:12 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/16 17:11:39 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	if (d > s)
 	{
-		
+		while (n > 0)
+		{
+			d[n - 1] = s[n - 1];
+			n--;
+		}
 	}
 	else
 	{
