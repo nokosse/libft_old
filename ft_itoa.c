@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nok <nok@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:13:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/15 23:13:32 by nok              ###   ########.fr       */
+/*   Updated: 2022/11/16 10:14:45 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,13 @@ int	get_int_len(int n)
 	return (cpt);
 }
 
-char	*ft_itoa(int n)
+char	*ft_itoa(int nb)
 {
 	char	*strint;
 	int		i;
+	long	n;
 
+	n = nb;
 	strint = malloc (sizeof(char *) * get_int_len(n) + 1);
 	i = get_int_len(n);
 	strint[i] = '\0';
@@ -48,9 +50,8 @@ char	*ft_itoa(int n)
 	}
 	while (n > 0)
 	{
-		strint[i] = (n % 10) + '0';
+		strint[i--] = (n % 10) + '0';
 		n /= 10;
-		i--;
 	}
 	return (strint);
 }
