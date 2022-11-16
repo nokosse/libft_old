@@ -6,7 +6,7 @@
 #    By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:26:39 by kvisouth          #+#    #+#              #
-#    Updated: 2022/11/16 17:21:24 by kvisouth         ###   ########.fr        #
+#    Updated: 2022/11/16 17:35:30 by kvisouth         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,10 @@ SRCS = 	ft_strlen.c \
 		ft_strlcpy.c \
 		ft_strncmp.c \
 		ft_strnstr.c \
+		ft_striteri.c \
+		ft_strmapi.c \
+		ft_strtrim.c \
+		ft_substr.c \
 		ft_tolower.c \
 		ft_toupper.c \
 		ft_putstr_fd.c \
