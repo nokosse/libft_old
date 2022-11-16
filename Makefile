@@ -6,7 +6,7 @@
 #    By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:26:39 by kvisouth          #+#    #+#              #
-#    Updated: 2022/11/16 16:03:45 by kvisouth         ###   ########.fr        #
+#    Updated: 2022/11/16 17:21:24 by kvisouth         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,8 +40,6 @@ SRCS = 	ft_strlen.c \
 		ft_putchar_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
-		ft_memset.c \
-		ft_memcpy.c
 
 OBJS			= $(SRCS:.c=.o)
 
