@@ -6,11 +6,16 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 10:36:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/16 11:58:08 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/16 13:11:13 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	En gros c'est comme un strchr mais vu qu'on manipule de la memoire
+**	et pas des str, ya des cast un peu de partout. 
+*/
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
