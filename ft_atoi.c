@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nok <nok@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:58:50 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/15 23:13:24 by nok              ###   ########.fr       */
+/*   Updated: 2022/11/16 10:20:51 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_atoi(const char *str)
 	nb = 0;
 	symb = 1;
 	i = 0;
-	while ((str[i] == ' ') || (str[i] >= 11 && str[i] <= 15))
+	while ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
@@ -41,8 +41,8 @@ int	ft_atoi(const char *str)
 // {
 // 	if(ac == 2)
 // 	{
-// 		printf("%d", ft_atoi(av[1]));
+// 		printf("Mon atoi    : %d", ft_atoi(av[1]));
 // 		printf("%s", "\n");
-// 		printf("%d", atoi(av[1]));
+// 		printf("Le vrai atoi: %d", atoi(av[1]));
 // 	}
 // }
