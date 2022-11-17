@@ -6,11 +6,20 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:58:50 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/16 10:20:51 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:04:35 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	1. Parcours tant qu'on a des whitespaces (\t \n \r \v \f \r et espace)
+**	2. Si on est sur un symbole, on regarde si il s'agit d'un + ou -
+**		Si c'est un +, on s'en fou, si c'est un - on rend symb en negatif.
+**	3. Parcours tant qu'on est sur des chiffres, convertit ces chiffres en int
+**	4. Retourne ces chiffres multiplier par symb. Si symb etait negatif, retourne
+**  		donc un nombre negatif.
+*/
 
 int	ft_atoi(const char *str)
 {
