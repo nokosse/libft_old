@@ -6,7 +6,7 @@
 #    By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:26:39 by kvisouth          #+#    #+#              #
-#    Updated: 2022/11/16 17:35:30 by kvisouth         ###   ########.fr        #
+#    Updated: 2022/11/18 10:35:49 by kvisouth         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,6 +47,8 @@ SRCS = 	ft_strlen.c \
 
 OBJS			= $(SRCS:.c=.o)
 
+.PHONY:			all clean fclean re
+
 CC				= gcc
 RM				= rm -rf
 CFLAGS			= -Wall -Wextra -Werror -I.
@@ -59,7 +61,7 @@ $(NAME):		$(OBJS)
 				ar rc $(NAME) $(OBJS)
 
 clean:
-				$(RM) $(OBJS) $(BONUS_OBJS)
+				$(RM) $(OBJS)
 
 fclean:			clean
 				$(RM) $(NAME)
