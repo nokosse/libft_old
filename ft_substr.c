@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:31:18 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/18 18:44:25 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/18 18:57:58 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	str = malloc((y) + 1);
 	if (!str || start > ft_strlen(s))
 		return (NULL);
-	printf("la taille du malloc :%d\n", y + 1);
 	while (i < y)
 	{
 		str[i] = s[start];
