@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:40:30 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/18 19:52:52 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/18 19:54:11 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 /*
 **	Cherche c dans *s, puis quand il le trouve, retourne un pointeur
 **	sur c dans *s, a la premiere occurence. 
-**	Selon le man, le caractere c signifie "octet" et ne fonctionnera pas
-**	avec un caractere multi-octet, en gros, c est un isprint. Je crois.
+**	Le caractere c est un int mais est interprete comme un unsigned char !
 */
 
 char	*ft_strchr(const char *s, int c)
