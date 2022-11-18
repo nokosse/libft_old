@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:31:18 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/18 11:30:38 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/18 18:44:25 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,41 +25,36 @@
 
 int	get_len(const char *s, unsigned int start, size_t len)
 {
-	int		nb;
-	size_t	max_len;
+	unsigned int	cpt;
+	unsigned int	y;
 
-	if (s[0] == '\0')
-		return (0);
-	max_len = strlen(s) - 1;
-	if (len > max_len)
-		len = max_len;
-	nb = len - start;
-	if (nb < 0)
-		nb *= -1;
-	return (nb);
+	cpt = 0;
+	y = start + len;
+	while (start < y && s[start] != '\0')
+	{
+		start++;
+		cpt++;
+	}
+	return (cpt);
 }
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	char			*str;
-	int				nb;
-	int				i;
-	int				j;
-	int				x;
+	char	*str;
+	int		i;
+	int		y;
 
-	if (s[0] == '\0')
-		return (0);
-	nb = get_len(s, start, len);
-	str = malloc((sizeof(char *) * nb) + 1);
+	y = get_len(s, start, len);
 	i = 0;
-	j = start;
-	x = 0;
-	while (x <= nb)
+	str = malloc((y) + 1);
+	if (!str || start > ft_strlen(s))
+		return (NULL);
+	printf("la taille du malloc :%d\n", y + 1);
+	while (i < y)
 	{
-		str[i] = s[j];
-		j++;
+		str[i] = s[start];
 		i++;
-		x++;
+		start++;
 	}
 	str[i] = '\0';
 	return (str);
