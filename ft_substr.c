@@ -6,14 +6,21 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:31:18 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/18 11:11:16 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/18 11:16:38 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** ft_substr retourne une chaine
+**	ft_substr retourne une chaine dans *s qui commence a start, de longueur len.
+**
+**	petit exemple :
+**	B O N J O U R \0
+**	0 1 2 3 4 5 6 7 
+**	  ^         ^
+**	 start      len
+**	$> ONJOUR
 */
 
 int	get_len(const char *s, unsigned int start, size_t len)
@@ -57,15 +64,6 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-
-/*
-**	petit exemple :
-**	B O N J O U R \0
-**	0 1 2 3 4 5 6 7 
-**	  ^         ^
-**	 start      len
-**	$> ONJOUR
-*/
 
 // int	main(int ac, char **av)
 // {
