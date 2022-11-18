@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nok <nok@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:03:25 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/15 23:13:54 by nok              ###   ########.fr       */
+/*   Updated: 2022/11/18 11:07:08 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Trouve c dans *s et renvoie le reste de la chaine a partir de c.
+**	A la difference de strchr, il renvoie la derniere occurence de la chaine *s 
+**	et non la premiere.
+*/
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -21,7 +27,7 @@ char	*ft_strrchr(const char *s, int c)
 		return (NULL);
 	while (s[i] != c && i != 0)
 		i--;
-	if (i == 0)
+	if (i == 0 && s[i] != c)
 		return (0);
 	return ((char *)(s + i));
 }
