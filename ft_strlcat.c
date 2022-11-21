@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nok <nok@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 15:11:58 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/15 23:13:47 by nok              ###   ########.fr       */
+/*   Updated: 2022/11/21 20:28:27 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Concatene *src a *dest et le termine par un '\0', retourne la longueur de
+**	la chaine quil a essayer de creer. Va concat. au max : size - strlen(dest)-1
+*/
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
