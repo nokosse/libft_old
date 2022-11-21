@@ -6,30 +6,32 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:03:25 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/18 19:55:07 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/21 11:25:45 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**	Trouve c dans *s et renvoie le reste de la chaine a partir de c.
-**	A la difference de strchr, il renvoie la derniere occurence de la chaine *s 
-**	et non la premiere.
+**	Cherche c dans *s, puis quand il le trouve, retourne un pointeur
+**	sur c dans *s, a la derniere occurence, strchr la premiere.
+**	Le caractere c est un int mais est interprete comme un unsigned char !
 */
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
+	char	*last_occur;
 
-	i = ft_strlen(s);
-	if (s[0] == '\0')
-		return (NULL);
-	while (s[i] != c && i != 0)
-		i--;
-	if (i == 0 && s[i] != c)
-		return (0);
-	return ((char *)(s + i));
+	last_occur = 0;
+	while (*s != '\0')
+	{
+		if ((unsigned char)*s == (unsigned char)c)
+			last_occur = (char *)s;
+		s++;
+	}
+	if (c == 0)
+		return ((char *)s);
+	return (last_occur);
 }
 
 // #include <bsd/string.h>
@@ -39,8 +41,8 @@ char	*ft_strrchr(const char *s, int c)
 // 	int tofind = 'f';
 // 	if (ac == 2)
 // 	{
-// 		printf("%s",ft_strrchr(av[1],tofind));
+// 		printf("ma foction  : %s",ft_strrchr(av[1],tofind));
 // 		printf("%s","\n");
-// 		printf("%s",strrchr(av[1],tofind));
+// 		printf("l'originale : %s",strrchr(av[1],tofind));
 // 	}
 // }
