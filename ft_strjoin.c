@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:01:32 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/22 16:57:34 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/22 17:06:32 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	int		j;
 
 	size = ft_strlen(s1) + ft_strlen(s2) + 1;
-	str = malloc(size);
+	str = (char *)malloc(size * sizeof(char *) + 1);
 	if (!str)
 		return (NULL);
 	i = 0;
@@ -38,6 +38,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 		j++;
 		i++;
 	}
+	str[j] = '\0';
 	return (str);
 }
 
