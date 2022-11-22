@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:31:18 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/22 16:34:11 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/22 16:40:42 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,8 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	int		i;
 	int		y;
 
+	if (start >= ft_strlen(s))
+		start = ft_strlen(s);
 	y = get_len(s, start, len);
 	i = 0;
 	str = malloc((y) + 1);
