@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:29:29 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/22 19:29:34 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/22 19:57:49 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,9 +68,9 @@ char	*ft_strtrim(const char *s, const char *set)
 // 	}
 // }
 
-int	main (void)
-{
-	char *s1 = "++yo+mec++";
-	char *set = "+";
-	printf("Voici le trimage: %s",ft_strtrim(s1, set));
-}
+// int	main (void)
+// {
+// 	char *s1 = "++yo+mec++";
+// 	char *set = "+";
+// 	printf("Voici le trimage: %s",ft_strtrim(s1, set));
+// }
