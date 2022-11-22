@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:29:29 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/22 16:35:33 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/22 19:29:34 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,61 +33,27 @@ int	is_trim(const char letter, const char *set)
 	return (0);
 }
 
-/*
-** Fonction qui nous fais avancer jusqu'a l'index ou on est plus sur un
-** trimset a gauche 
-*/
-
-int	left_trim(const char *s1, const char *set)
-{
-	int	i;
-
-	i = 0;
-	while (is_trim(s1[i], set) == 1)
-		i++;
-	return (i);
-}
-
-/*
-**	Idem a droite 
-*/
-
-int	right_trim(const char *s1, const char *set)
-{
-	int	i;
-
-	if (s1[0] == '\0')
-		return (0);
-	i = strlen(s1) - 1;
-	while (is_trim(s1[i], set) == 1)
-		i--;
-	return (i);
-}
-
-char	*ft_strtrim(const char *s1, const char *set)
+char	*ft_strtrim(const char *s, const char *set)
 {
 	char	*str;
+	int		la_taille;
 	int		i;
 	int		j;
 	int		n;
-	int		max;
 
-	i = left_trim(s1, set);
-	j = i;
-	max = right_trim(s1, set) + 1;
-	while (i != max)
-	{
-		i++;
-		n++;
-	}
-	str = malloc((n + 1) * (sizeof(char *)));
 	i = 0;
-	while (j < max)
-	{
-		str[i] = s1[j];
+	j = ft_strlen(s) - 1;
+	while (is_trim(s[i], set) == 1 && s[i])
 		i++;
-		j++;
-	}
+	while (is_trim(s[j], set) == 1 && j > i)
+		j--;
+	la_taille = (j - i) + 1;
+	str = malloc(la_taille * sizeof(str) + 1);
+	if (!str)
+		return (NULL);
+	n = 0;
+	while (i <= j)
+		str[n++] = s[i++];
 	str[i] = '\0';
 	return (str);
 }
@@ -101,3 +67,10 @@ char	*ft_strtrim(const char *s1, const char *set)
 // 	printf("Voici le trimage: %s",ft_strtrim(s1, set));
 // 	}
 // }
+
+int	main (void)
+{
+	char *s1 = "++yo+mec++";
+	char *set = "+";
+	printf("Voici le trimage: %s",ft_strtrim(s1, set));
+}
