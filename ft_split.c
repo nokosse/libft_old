@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:50:04 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:22 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/23 19:59:15 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,17 +48,23 @@ size_t	wrd_len(const char *s, char c)
 size_t	strcnt(const char *s, char c)
 {
 	int	i;
-	int	sep_count;
+	int	cpt;
 
-	sep_count = 0;
 	i = 0;
-	while (s[i])
+	cpt = 0;
+	while (s[i] != '\0')
 	{
-		if (is_sep(s[i], c) == 1)
-			sep_count++;
-		i++;
+		while (is_sep(s[i], c) == 1 && s[i])
+			i++;
+		if (s[i])
+		{
+			cpt++;
+			i++;
+		}
+		while (is_sep(s[i], c) == 0 && s[i])
+			i++;
 	}
-	return (i - sep_count);
+	return (cpt);
 }
 
 /*
@@ -137,7 +143,7 @@ char	**ft_split(const char *s, char c)
 // 			char	**split = ft_split(av[1], sep);
 // 			while (split[i])
 // 			{
-// 				printf("split %d : %s\n",i,split[i]);
+// 				printf("split %d : %s\n",i+1,split[i]);
 // 				i++;
 // 			}
 // 		}
