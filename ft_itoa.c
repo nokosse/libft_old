@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:13:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 14:10:54 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/23 19:09:24 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	get_int_len(int n)
 	return (cpt);
 }
 
-char	*ft_putnbr(int nb, char *strint)
+static char	*ft_putnbr(int nb, char *strint)
 {
 	int		i;
 	long	n;
