@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:13:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/22 19:48:08 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/23 13:35:39 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,19 +27,14 @@ int	get_int_len(int n)
 	return (cpt);
 }
 
-char	*ft_itoa(int nb)
+char	*ft_putnbr(int nb, char *strint)
 {
-	char	*strint;
 	int		i;
 	long	n;
 
 	n = nb;
-	strint = malloc (sizeof(char *) * get_int_len(n) + 1);
-	if (!strint)
-		return (NULL);
 	i = get_int_len(n);
-	strint[i] = '\0';
-	i--;
+	strint[i--] = '\0';
 	if (n == 0)
 	{
 		strint[0] = '0';
@@ -55,6 +50,21 @@ char	*ft_itoa(int nb)
 		strint[i--] = (n % 10) + '0';
 		n /= 10;
 	}
+	return (strint);
+}
+
+char	*ft_itoa(int nb)
+{
+	char	*strint;
+	int		i;
+	long	n;
+
+	n = nb;
+	i = get_int_len(n);
+	strint = malloc (sizeof(char) * i + 1);
+	if (!strint)
+		return (NULL);
+	strint = ft_putnbr(nb, strint);
 	return (strint);
 }
 

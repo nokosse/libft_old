@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:50:04 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/22 19:48:33 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/23 13:04:20 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char	*word(const char *s, char c)
 
 	i = 0;
 	wdlen = wrd_len (s, c);
-	wd = malloc (wdlen + 1);
+	wd = malloc (wdlen * sizeof(char) + 1);
 	if (!wd)
 		return (NULL);
 	while (i < wdlen)

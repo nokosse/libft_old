@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:29:29 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/22 19:57:49 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/23 13:03:46 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char	*ft_strtrim(const char *s, const char *set)
 	while (is_trim(s[j], set) == 1 && j > i)
 		j--;
 	la_taille = (j - i) + 1;
-	str = malloc(la_taille * sizeof(str) + 1);
+	str = malloc(la_taille * sizeof(char) + 1);
 	if (!str)
 		return (NULL);
 	n = 0;
