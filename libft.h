@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:47:26 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/21 18:43:04 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/24 14:44:01 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,12 @@
 # include <stdio.h>
 # include <string.h>
 # include <stdint.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
