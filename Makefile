@@ -6,7 +6,7 @@
 #    By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:26:39 by kvisouth          #+#    #+#              #
-#    Updated: 2022/11/22 14:26:33 by kvisouth         ###   ########.fr        #
+#    Updated: 2022/11/24 18:21:20 by kvisouth         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,28 +45,43 @@ SRCS = 	ft_strlen.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 
-OBJS			= $(SRCS:.c=.o)
-
-.PHONY:			all clean fclean re
-
-CC				= gcc
-RM				= rm -rf
-CFLAGS			= -Wall -Wextra -Werror -I.
+SRCB =	ft_lstadd_back.c \
+		ft_lstadd_front.c \
+		ft_lstclear.c \
+		ft_lstdelone.c \
+		ft_lstiter.c \
+		ft_lstlast.c \
+		ft_lstmap.c \
+		ft_lstnew.c \
+		ft_lstsize.c \
 
 NAME			= libft.a
 
-all:			$(NAME)
+CC				= gcc
+CFLAGS			= -Wall -Wextra -Werror
+RM				= rm -rf
+AR				= ar rcs
+
+OBJS			= $(SRCS:.c=.o)
+OBJB			= $(SRCB:.c=.o)
 
 $(NAME):		$(OBJS)
-				ar rc $(NAME) $(OBJS)
+				$(AR) $(NAME) $(OBJS)
+
+bonus:			$(OBJB)
+				$(AR) $(NAME) $(OBJB)
+
+all:			$(NAME)
 
 clean:
-				$(RM) $(OBJS)
+				$(RM) $(OBJS) $(OBJB)
 
 fclean:			clean
 				$(RM) $(NAME)
 
 re:				fclean $(NAME)
+
+.PHONY:			all clean fclean re bonus
 
 so:
 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
