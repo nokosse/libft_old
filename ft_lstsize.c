@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 16:04:26 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/25 16:54:45 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/25 16:58:16 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_lstsize(t_list *lst)
 **		temp devient une copie de la liste *lst, qui va permmettre de parcourir *lst
 **	Dans notre boucle, on dit que temp = variable next de notre structure,
 **		c'est comme sa qu'on passe d'un maillon a lautre.
-		on saute d'un maillon a l'autre grace a leurs pointeurs (next)
+**		on saute d'un maillon a l'autre grace a leurs pointeurs (next)
 **	On incremente i, pour compter combien de maillon avec next = non-NULL on a.
 **	
 **	Donc quand temp arrivera sur le dernier maillon, il prendra la valeur NULL
