@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:47:26 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/24 19:46:38 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/25 14:46:23 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,22 @@
 # include <stdio.h>
 # include <string.h>
 # include <stdint.h>
+
+/*
+** 'typedef' est un mot cle qui sert a donner un nom a un nouveau type.
+**	Donc la on a s_list, qui est un type de variabe de type struct, qui est une
+**	structure donc.
+**	
+**	On apelle membre ce qu'il se trouve dans la structure.
+**
+**	- 's_list' est le nom de la structure.
+**	- 't_list' est un alias pour appeler 'struct s_list' partout.
+**	- Le membre 'content' est la donnee contenue dans le maillon de la liste
+**		'content' est de type 'void *' pour styler nimporte quel type de donnee.
+**		un char, un char*, un int, un size_t etc..
+**	- Le membre 'next' est l'adresse du maillon suivant de la liste ou NULL si
+**		c'est le dernier. (Un pointeur sur l'adresse suivante)
+*/
 
 typedef struct s_list
 {
