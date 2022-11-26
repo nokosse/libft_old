@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:47:26 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/25 14:46:23 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/26 19:00:09 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@
 **		'content' est de type 'void *' pour styler nimporte quel type de donnee.
 **		un char, un char*, un int, un size_t etc..
 **	- Le membre 'next' est l'adresse du maillon suivant de la liste ou NULL si
-**		c'est le dernier. (Un pointeur sur l'adresse suivante)
+**		c'est le dernier. (Un pointeur sur l'adresse suivante) 
 */
 
 typedef struct s_list
