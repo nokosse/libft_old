@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 12:16:48 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/28 12:55:02 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/28 14:04:30 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,10 @@
 **	del : adresse de la fct. permettant de suppr. le contenu de l'element
 */
 
-void	ft_lstdelone(t_list *lst, void (*del)(void *))
-{
-	void	*elem;
-
-	if (lst != NULL || del != NULL)
-	{
-		elem = lst->content;
-		(*del)(elem);
-		free(elem);
-	}
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
+{	
+	if (!lst || !del)
+		return ;
+	(*del)(lst->content);
+	free(lst);
 }
