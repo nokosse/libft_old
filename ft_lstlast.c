@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/26 17:07:43 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/28 12:08:10 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/28 14:05:53 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*elem;
 
+	if (!lst)
+		return (NULL);
 	elem = lst;
 	while (elem != NULL)
 		elem = elem->next;
