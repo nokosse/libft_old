@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 13:21:47 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/28 14:05:54 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/28 15:00:43 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,12 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*temp;
 
-	temp = lst;
-	while (temp != NULL)
+	if (!lst)
+		return ;
+	while (lst != NULL)
 	{
-		temp = temp->next;
-		(*f)(temp->content);
+		temp = lst->next;
+		(*f)(lst->content);
+		lst = temp;
 	}
 }
