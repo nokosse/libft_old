@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 14:46:33 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/28 14:04:46 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 18:59:21 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*elem;
 
-	elem = malloc(sizeof(t_list *));
+	elem = malloc(sizeof(t_list));
 	if (!elem)
 		return (NULL);
 	elem->content = content;
