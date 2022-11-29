@@ -6,7 +6,7 @@
 #    By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:26:39 by kvisouth          #+#    #+#              #
-#    Updated: 2022/11/28 17:41:52 by kvisouth         ###   ########.fr        #
+#    Updated: 2022/11/29 12:04:41 by kvisouth         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,7 +77,7 @@ clean:
 				$(RM) $(OBJS) $(OBJB)
 
 fclean:			clean
-				$(RM) $(NAME) libft.so
+				$(RM) $(NAME) libft.so a.out
 
 re:				fclean $(NAME)
 
