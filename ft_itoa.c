@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:13:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 19:09:24 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:45:55 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 **	argument. Les nombres négatifs doivent être gérés.
 */
 
-int	get_int_len(int n)
+static int	get_int_len(int n)
 {
 	int	cpt;
 

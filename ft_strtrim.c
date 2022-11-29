@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:29:29 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:29 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:47:30 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 **	enfait il enleve les char de *set a gauche et a droite seulement.
 */
 
-int	is_trim(const char letter, const char *set)
+static int	is_trim(const char letter, const char *set)
 {
 	int	i;
 

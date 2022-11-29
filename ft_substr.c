@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:31:18 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:30 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:47:37 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 **	$> ONJOUR
 */
 
-int	get_len(const char *s, unsigned int start, size_t len)
+static int	get_len(const char *s, unsigned int start, size_t len)
 {
 	unsigned int	cpt;
 	unsigned int	y;

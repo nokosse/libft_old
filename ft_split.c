@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:50:04 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/25 16:57:18 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:46:57 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 **	pour voir si c'est un separateur (1)
 */
 
-int	is_sep(const char s, char c)
+static int	is_sep(const char s, char c)
 {
 	if (s == c)
 		return (1);
@@ -30,7 +30,7 @@ int	is_sep(const char s, char c)
 **	Enfait c'est un strnlen, ou n est le separateur.
 */
 
-size_t	wrd_len(const char *s, char c)
+static size_t	wrd_len(const char *s, char c)
 {
 	int	i;
 
@@ -45,7 +45,7 @@ size_t	wrd_len(const char *s, char c)
 ** Compte les separateurs et strlen puis retourne strlen - separateurs.
 */
 
-size_t	strcnt(const char *s, char c)
+static size_t	strcnt(const char *s, char c)
 {
 	int	i;
 	int	cpt;
@@ -72,7 +72,7 @@ size_t	strcnt(const char *s, char c)
 **	Enfait c'est un strndup, ou n est le separateur, encore. 
 */
 
-char	*word(const char *s, char c)
+static char	*word(const char *s, char c)
 {
 	int		wdlen;
 	char	*wd;
