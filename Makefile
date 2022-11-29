@@ -6,7 +6,7 @@
 #    By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:26:39 by kvisouth          #+#    #+#              #
-#    Updated: 2022/11/29 17:11:26 by kvisouth         ###   ########.fr        #
+#    Updated: 2022/11/29 19:15:53 by kvisouth         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,10 +62,11 @@ CFLAGS		= -Wall -Wextra -Werror
 RM			= rm -rf
 AR			= ar rcs
 
+#Compile nos .c en .o
 OBJS		= $(SRCS:.c=.o)
 OBJB		= $(SRCB:.c=.o)
 
-
+#Creer une archive 'libft.a' contenant tout nos .o
 $(NAME):	$(OBJS)
 			$(AR) $(NAME) $(OBJS)
 
