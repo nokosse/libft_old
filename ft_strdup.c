@@ -6,11 +6,15 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:19:29 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:23 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:55:41 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Duplique la chaine *s 
+*/
 
 char	*ft_strdup(const char *s)
 {

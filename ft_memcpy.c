@@ -6,11 +6,15 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 11:12:03 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:18 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:53:42 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Copie *src dans *dst (ce sont des emplacement memoires.) jusqu'a n caracteres.
+*/
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

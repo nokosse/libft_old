@@ -6,11 +6,15 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:27:07 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:26 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:57:20 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Retourne la longueur de la chaine *s 
+*/
 
 size_t	ft_strlen(const char *s)
 {

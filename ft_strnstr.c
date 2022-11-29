@@ -6,11 +6,17 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:58:07 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:27 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 12:01:28 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Trouve *little dans *big, en cherchant jusqu'a 'len'
+**	Si *little est trouver dans *big, un pointeur vers *big correspondant au
+**	premier caractere de *little est retourner.
+*/
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

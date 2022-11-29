@@ -6,11 +6,17 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:37:23 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/28 16:46:32 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:58:35 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	Retourne la difference entre *s1 et *s2 en les comparant jusqu'a 'n'
+**	Leur difference retourner est un resultat de soustraction entre leurs
+**	valeurs ASCII. 
+*/
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

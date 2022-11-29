@@ -6,15 +6,14 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:01:32 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 14:12:10 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:56:14 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**	Alloue (avec malloc(3)) et retourne une nouvelle
-**	chaîne, résultat de la concaténation de s1 et s2. 
+**	Concatene *s1 et *s2 dans une nouvelle chaine.
 */
 
 char	*ft_strjoin(const char *s1, const char *s2)

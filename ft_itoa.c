@@ -6,16 +6,14 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:13:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/29 11:45:55 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/29 11:51:33 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-**	Alloue (avec malloc(3)) et retourne une chaîne
-**	de caractères représentant l’entier ’n’ reçu en
-**	argument. Les nombres négatifs doivent être gérés.
+**	Transforme un int en char. Doit gerer INT_MIN et INT_MAX et les negatifs.
 */
 
 static int	get_int_len(int n)
