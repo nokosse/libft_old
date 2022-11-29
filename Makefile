@@ -6,9 +6,11 @@
 #    By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:26:39 by kvisouth          #+#    #+#              #
-#    Updated: 2022/11/29 12:04:41 by kvisouth         ###   ########.fr        #
+#    Updated: 2022/11/29 17:11:26 by kvisouth         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+NAME = libft.a
 
 SRCS = 	ft_strlen.c \
 		ft_strrchr.c \
@@ -55,33 +57,32 @@ SRCB =	ft_lstadd_back.c \
 		ft_lstnew.c \
 		ft_lstsize.c \
 
-NAME			= libft.a
+CC			= gcc
+CFLAGS		= -Wall -Wextra -Werror
+RM			= rm -rf
+AR			= ar rcs
 
-CC				= gcc
-CFLAGS			= -Wall -Wextra -Werror
-RM				= rm -rf
-AR				= ar rcs
+OBJS		= $(SRCS:.c=.o)
+OBJB		= $(SRCB:.c=.o)
 
-OBJS			= $(SRCS:.c=.o)
-OBJB			= $(SRCB:.c=.o)
 
-$(NAME):		$(OBJS)
-				$(AR) $(NAME) $(OBJS)
+$(NAME):	$(OBJS)
+			$(AR) $(NAME) $(OBJS)
 
-bonus:			$(OBJB)
-				$(AR) $(NAME) $(OBJB)
+bonus:		$(OBJB)
+			$(AR) $(NAME) $(OBJB)
 
-all:			$(NAME)
+all:		$(NAME)
 
 clean:
-				$(RM) $(OBJS) $(OBJB)
+			$(RM) $(OBJS) $(OBJB)
 
-fclean:			clean
-				$(RM) $(NAME) libft.so a.out
+fclean:		clean
+			$(RM) $(NAME) libft.so a.out
 
-re:				fclean $(NAME)
+re:			fclean $(NAME)
 
-.PHONY:			all clean fclean re bonus
+.PHONY:		all clean fclean re bonus
 
 so:
 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
