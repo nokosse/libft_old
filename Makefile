@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+         #
+#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/12 17:26:39 by kvisouth          #+#    #+#              #
-#    Updated: 2022/11/29 19:15:53 by kvisouth         ###   ########.fr        #
+#    Updated: 2022/11/30 15:21:32 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,21 +70,20 @@ OBJB		= $(SRCB:.c=.o)
 $(NAME):	$(OBJS)
 			$(AR) $(NAME) $(OBJS)
 
+#Ajoute / Creer 'libft.a' contenant les .o des bonus
 bonus:		$(OBJB)
 			$(AR) $(NAME) $(OBJB)
 
 all:		$(NAME)
 
+#Fait rm -rf pour tout les fichier .o
 clean:
 			$(RM) $(OBJS) $(OBJB)
 
+#Utilise la regle clean, puis retire egalement libft.a et a.out
 fclean:		clean
-			$(RM) $(NAME) libft.so a.out
+			$(RM) $(NAME) a.out
 
 re:			fclean $(NAME)
 
 .PHONY:		all clean fclean re bonus
-
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS) $(OBJB)
