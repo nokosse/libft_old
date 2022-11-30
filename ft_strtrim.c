@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:29:29 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/30 16:59:03 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 17:46:56 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,13 @@ static int	is_trim(const char letter, const char *set)
 	}
 	return (0);
 }
+
+/*
+**	Etape 1 : il ignore les caracteres a trimmer a gauche avec i
+**	Etape 2 : parel a droite avec j, jusqu'a croiser i.
+**	Ducoup on sait quon malloc i-j + 1 pour le \0
+**	Etape 3 : On copie la chaine de i a j dans notre nouvelle string.
+*/
 
 char	*ft_strtrim(const char *s, const char *set)
 {

@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:31:18 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/29 11:47:37 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 17:44:45 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,11 @@
 **	$> ONJOUR
 */
 
+/*
+**	Renvoie la longueur de la chaine qu'on va malloc. 
+**	Compte de 'start' a 'y', 'y' etant 'start' + 'len'
+*/
+
 static int	get_len(const char *s, unsigned int start, size_t len)
 {
 	unsigned int	cpt;
@@ -37,6 +42,11 @@ static int	get_len(const char *s, unsigned int start, size_t len)
 	}
 	return (cpt);
 }
+
+/*
+**	Si on donne un start plus grand que la longueur de s
+**	Start a pour valeur la longueur de s 
+*/
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
