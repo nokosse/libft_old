@@ -6,9 +6,11 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:23:56 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:08 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 17:12:51 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {
@@ -18,26 +20,13 @@ int	ft_isdigit(int c)
 		return (0);
 }
 
-/*
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-int	main(int ac, char **av)
-{
-	(void) ac;
-	(void) av;
-	int check = 's';
-	if (ft_isdigit(check) != 0)
-		printf("%d", 1);
-	else
-		printf("%d", 0);
-
-	printf("%s", "\n");
-
-	if (isdigit(check) != 0)
-		printf("%d", 1);
-	else
-		printf("%d", 0);
-}
-*/
+// int	main (int ac, char **av)
+// {
+// 	if (ac == 2)
+// 	{
+// 		if (ft_isdigit(atoi(av[1])) == 1)
+// 			printf("%s","oui");
+// 		else
+// 			printf("%s (mettre la valeur ASCII !)","non");
+// 	}
+// }

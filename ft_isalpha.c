@@ -6,9 +6,11 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 10:30:02 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:06 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 17:12:07 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
@@ -18,27 +20,13 @@ int	ft_isalpha(int c)
 		return (0);
 }
 
-/*
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-int	main(int ac, char **av)
-{
-	(void) ac;
-	(void) av;
-	int check = 'b';
-	int oui = isalpha(check);
-	if (ft_isalpha(check) == 1)
-		printf("%d", 1);
-	else
-		printf("%d", 0);
-
-	printf("%s", "\n");
-
-	if (isalpha(check) != 0)
-		printf("%d", oui);
-	else
-		printf("%d", 0);
-}
-*/
+// int	main (int ac, char **av)
+// {
+// 	if (ac == 2)
+// 	{
+// 		if (ft_isalpha(atoi(av[1])) == 1)
+// 			printf("%s","oui");
+// 		else
+// 			printf("%s (mettre la valeur ASCII !)","non");
+// 	}
+// }

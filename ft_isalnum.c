@@ -6,9 +6,11 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:45:49 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:05 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 17:10:46 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
@@ -20,26 +22,13 @@ int	ft_isalnum(int c)
 		return (0);
 }
 
-/*
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-int	main (int ac, char **av)
-{
-	(void) av;
-	(void) ac;
-	int check = '0';
-	if (ft_isalnum(check) == 1) //Check avec ma fonction
-		printf("%d",1);
-	else
-		printf("%d",0);
-
-	printf("%s","\n");
-
-	if (ft_isalnum(check) == 1) //Check avec la vraie fonction
-		printf("%d",1);
-	else
-		printf("%d",0);
-}
-*/
+// int	main (int ac, char **av)
+// {
+// 	if (ac == 2)
+// 	{
+// 		if (ft_isalnum(atoi(av[1])) == 1)
+// 			printf("%s","oui");
+// 		else
+// 			printf("%s (mettre la valeur ASCII !)","non");
+// 	}
+// }

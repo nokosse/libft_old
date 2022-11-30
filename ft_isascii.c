@@ -6,9 +6,11 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 11:09:47 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:07 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 17:12:18 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -18,27 +20,13 @@ int	ft_isascii(int c)
 		return (0);
 }
 
-/*
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-int	main (int ac, char **av)
-{
-	(void) ac;
-	(void) av;
-
-	int check = -1;
-	if (ft_isascii(check) != 0)
-		printf("%d", 1);
-	else
-		printf("%d", 0);
-
-	printf("%s", "\n");
-
-	if (isascii(check) != 0)
-		printf("%d", 1);
-	else
-		printf("%d", 0);
-}
-*/
+// int	main (int ac, char **av)
+// {
+// 	if (ac == 2)
+// 	{
+// 		if (ft_isascii(atoi(av[1])) == 1)
+// 			printf("%s","oui");
+// 		else
+// 			printf("%s (mettre la valeur ASCII !)","non");
+// 	}
+// }
