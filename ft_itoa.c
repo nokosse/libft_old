@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 11:13:31 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/29 11:51:33 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 13:20:06 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ static int	get_int_len(int n)
 	cpt = 0;
 	if (n < 0)
 		cpt++;
+	if (n == 0)
+		return (1);
 	while (n != 0)
 	{
 		cpt++;
