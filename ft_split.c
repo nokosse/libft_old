@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:50:04 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/29 11:46:57 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 14:56:03 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	is_sep(const char s, char c)
 **	Enfait c'est un strnlen, ou n est le separateur.
 */
 
-static size_t	wrd_len(const char *s, char c)
+static size_t	ft_strnlen(const char *s, char c)
 {
 	int	i;
 
@@ -72,14 +72,14 @@ static size_t	strcnt(const char *s, char c)
 **	Enfait c'est un strndup, ou n est le separateur, encore. 
 */
 
-static char	*word(const char *s, char c)
+static char	*ft_strndup(const char *s, char c)
 {
 	int		wdlen;
 	char	*wd;
 	int		i;
 
 	i = 0;
-	wdlen = wrd_len (s, c);
+	wdlen = ft_strnlen (s, c);
 	wd = malloc (wdlen * sizeof(char) + 1);
 	if (!wd)
 		return (NULL);
@@ -114,7 +114,7 @@ char	**ft_split(const char *s, char c)
 	char	**strs;
 	int		i;
 
-	strs = malloc ((strcnt (s, c)) * (sizeof(char *)) + 1);
+	strs = malloc ((sizeof(char *) * (strcnt(s, c) + 1)));
 	if (!strs)
 		return (NULL);
 	i = 0;
@@ -124,7 +124,7 @@ char	**ft_split(const char *s, char c)
 			s++;
 		if (*s)
 		{
-			strs[i] = word(s, c);
+			strs[i] = ft_strndup(s, c);
 			i++;
 		}
 		while (is_sep(*s, c) == 0 && *s)
