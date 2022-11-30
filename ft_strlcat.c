@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 15:11:58 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/30 17:55:02 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 18:58:42 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 /*
 **	Concatene *src a *dest et le termine par un '\0', retourne la longueur de
 **	la chaine quil a essayer de creer. Va concat. au max : size - strlen(dest)-1.
+**	En gros retourne la taille totale de dest en memoire.
 **
 **	Si la size est plus petite ou egale a la longueur de *dest, on retourne
 **	la size + la longueur de *src
