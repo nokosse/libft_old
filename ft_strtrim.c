@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 17:29:29 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/29 11:47:30 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/11/30 14:00:46 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char	*ft_strtrim(const char *s, const char *set)
 	n = 0;
 	while (i <= j)
 		str[n++] = s[i++];
-	str[i] = '\0';
+	str[n] = '\0';
 	return (str);
 }
 
