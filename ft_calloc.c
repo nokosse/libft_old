@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 12:01:59 by kvisouth          #+#    #+#             */
-/*   Updated: 2022/11/23 13:45:04 by kvisouth         ###   ########.fr       */
+/*   Updated: 2022/12/01 15:13:51 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*p;
 	int		len;
 
-	if (nmemb == SIZE_MAX && size == SIZE_MAX)
+	if (size != 0 && nmemb != 0 && (nmemb * size) / size != nmemb)
 		return (NULL);
 	len = nmemb * size;
 	p = malloc(len);
